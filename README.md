@@ -1,8 +1,8 @@
 # Posts
 
-A simple web app to demonstrate event-driven microservice architecture.
+A simple web app to demonstrate event-driven microservice architecture
 
-Users can create new posts and comments. By doing so, events will be created and sent to the event-bus microservice which will then emit the events to any services that are interested.
+Users can create posts and comments. By doing so, events will be emitted to the event-bus microservice which will then forward the events to any microservices that are interested.
 
 The app contains the following microservices:
 
@@ -10,15 +10,15 @@ The app contains the following microservices:
 
     * comments service - for comment creation
 
-    * query service - for retrieving posts and comments from the in-memory db/cache
+    * query service - for retrievval of posts and comments from the in-memory db/cache
 
     * event-bus - receives events from services, and emits them to the subscribers
 
-    * moderation service - look into the content of the comments and check if the contents contains any forbidden words. For demo only, this app prohibites the word 'orange' in any comments.
+    * moderation service - look into the content of the comments and check if the content contains any forbidden words. For demonstration purpose only, this app prohibites the word 'orange' in any comments.
 
 # Technologies
 
-- Docker - Each microservice is run on Docker.
+- Docker - each microservice runs on Docker
 
 - Kubernetes - orchestrates Docker containers
 
@@ -40,6 +40,9 @@ The app contains the following microservices:
 
 # How to run
 
-1. To run the app, ensure you have skaffold installed locally
-   https://skaffold.dev/docs/install/
-3. run `skaffold dev`
+1. To run the app, ensure you have the following tools installed locally
+
+   - Dockers and Kubernetes - https://www.docker.com/products/docker-desktop
+   - Skaffold - https://skaffold.dev/docs/install/
+
+2. run `skaffold dev`
