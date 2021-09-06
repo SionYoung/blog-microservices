@@ -42,5 +42,4 @@ The app contains the following microservices:
 
 1. To run the app, ensure you have skaffold installed locally
    https://skaffold.dev/docs/install/
-2. run `kubectl rollout restart deployment`
 3. run `skaffold dev`

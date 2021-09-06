@@ -10,7 +10,7 @@ export default () => {
 
   useEffect(() => {
     fetchPost();
-  }, []);
+  }, [posts]);
 
   const fetchPost = async () => {
     const res = await axios.get("http://posts.com/posts");
