@@ -6,15 +6,15 @@ Users can create posts and comments. By doing so, events will be emitted to the 
 
 The app contains the following microservices:
 
-    * posts service - for post creation
+- posts service - for post creation
 
-    * comments service - for comment creation
+- comments service - for comment creation
 
-    * query service - for retrievval of posts and comments from the in-memory db/cache
+- query service - for retrievval of posts and comments from the in-memory db/cache
 
-    * event-bus - receives events from services, and emits them to the subscribers
+- event-bus - receives events from services, and emits them to the subscribers
 
-    * moderation service - look into the content of the comments and check if the content contains any forbidden words. For demonstration purpose only, this app prohibites the word 'orange' in any comments.
+- moderation service - look into the content of the comments and check if the content contains any forbidden words. For demonstration purpose only, this app prohibites the word 'orange' in any comments.
 
 # Technologies
 
